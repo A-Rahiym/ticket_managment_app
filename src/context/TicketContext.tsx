@@ -2,7 +2,7 @@ import { createContext, useContext, useState } from "react";
 import { toast } from "sonner";
 import { Ticket } from "../types/ticket";
 import { createTicket, updateTicket, deleteTicket } from "../mock/mockApi";
-import { initialTickets } from "@/mock/mock";
+import { initialTickets } from "../mock/mock";
 
 
 interface TicketContextType {
@@ -56,7 +56,7 @@ export function TicketProvider({ children }: TicketProviderProps) {
 
   const handleDeleteTicket = async (id: string) => {
     try {
-      await deleteTicket(id);
+      await deleteTicket( );
       setTickets(tickets.filter((ticket) => ticket.id !== id));
       toast.success("Ticket deleted successfully!");
     } catch (error) {

@@ -38,6 +38,6 @@ export const updateTicket = async (id: string, ticket: Omit<Ticket, "id">): Prom
   return { ...ticket, id };
 };
 
-export const deleteTicket = async (id: string): Promise<void> => {
+export const deleteTicket = async ( ): Promise<void> => {
   await new Promise((resolve) => setTimeout(resolve, 500)); // Simulate API delay
 };
