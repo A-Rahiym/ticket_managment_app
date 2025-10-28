@@ -188,21 +188,21 @@ Helpful contribution workflow and expectations:
      ```
 
 3. Tests
-   - This repository does not include tests yet. Recommended next step: add Vitest + React Testing Library and create at least:
+- This repository does not include tests yet. Recommended next step: add Vitest + React Testing Library and create at least:
      - one unit test for a core UI component
      - one integration test for a key page (e.g., tickets list)
 
-4. Commit messages and PRs
+1. Commit messages and PRs
    - Keep commits small and focused. Use descriptive commit messages.
    - Open a Pull Request against `main`. Include a short description of what was changed and why.
    - Request reviews and address feedback in follow-up commits.
 
-5. CI suggestions
+2. CI suggestions
    - Add a CI workflow (GitHub Actions) that runs on PRs and does:
      - `npm ci` / `npm install`
      - `npm run lint`
      - `npm run build`
      - `npm test` (when tests are added)
 
-6. Reporting issues / feature requests
+3. Reporting issues / feature requests
    - Open an issue with steps to reproduce, expected behavior, and any error output.
